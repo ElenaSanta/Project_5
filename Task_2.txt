@@ -1,0 +1,37 @@
+import requests
+
+#1 get request
+url="https://jsonplaceholder.typicode.com/comments?postId=1" 
+response = requests.get(url)
+
+print("Status code:", response.status_code)
+
+#2 εκτύπωση των email
+
+if response.status_code == 200:
+    comments = response.json()  
+    for comment in comments:
+        print(comment["email"]) 
+else:
+    print(f"Σφάλμα στο GET αίτημα: {response.status_code}")
+
+
+#3 post request 
+new_comment={
+    "name":"name1",
+    "email":"name1@gmail.com",
+    "body":"content",
+    "postId": 1
+}
+
+post_url = "https://jsonplaceholder.typicode.com/comments"
+post_response = requests.post(post_url, json=new_comment)
+
+
+#4 ελεγχος απαντησης απο 
+
+if post_response.status_code in range(200, 300):
+    print("\n Το σχόλιο δημιουργήθηκε επιτυχώς!")
+    print(post_response.json()) 
+else:
+    print(f"Σφάλμα στο POST αίτημα: {post_response.status_code}")

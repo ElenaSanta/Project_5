@@ -1,0 +1,21 @@
+
+--------- GET request adding a custom header --------- 
+
+C:\Users\elena>curl -H "X-Student-Name: Elena" https://httpbin.org/headers
+{
+  "headers": {
+    "Accept": "*/*",
+    "Host": "httpbin.org",
+    "User-Agent": "curl/8.9.1",
+    "X-Amzn-Trace-Id": "Root=1-68f3f971-17dbb76b35fe2a4933c86ed5",
+    "X-Student-Name": "Elena"
+  }
+}
+
+--------- GET request with Basic Auth credentials ---------
+
+C:\Users\elena>curl -u user:passwd https://httpbin.org/basic-auth/user/passwd
+{
+  "authenticated": true,
+  "user": "user"
+}

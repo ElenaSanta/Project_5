@@ -1,0 +1,53 @@
+Request URL : https://api.github.com/users/octocat
+Request Method : GET 
+Request Header1 : Accept-Encoding	gzip, deflate, br, zstd
+Request Header2 : User-Agent	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
+Status code : 200 OK
+Response Header1 : server	github.com
+Response Header2 : x-frame-options	deny
+
+
+--------------------------  Request Headers  --------------------------
+
+Accept	text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding	gzip, deflate, br, zstd
+Accept-Language	en-US,en;q=0.5
+Connection	keep-alive
+Host	api.github.com
+Priority	u=0, i
+Sec-Fetch-Dest	document
+Sec-Fetch-Mode	navigate
+Sec-Fetch-Site	none
+Sec-Fetch-User	?1
+Upgrade-Insecure-Requests	1
+User-Agent	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
+
+--------------------------  Response Headers  --------------------------
+
+X-Firefox-Spdy	h2
+accept-ranges	bytes
+access-control-allow-origin	*
+access-control-expose-headers	ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+cache-control	public, max-age=60, s-maxage=60
+content-encoding	gzip
+content-length	518
+content-security-policy	default-src 'none'
+content-type	application/json; charset=utf-8	
+date	Sat, 02 Aug 2025 19:30:14 GMT
+etag	W/"8552cc4c53de385a1b76aa1800bcee44485a33a845858f675c45a35c8e8a8371"
+last-modified	Tue, 06 Mar 2012 23:06:50 GMT
+referrer-policy	origin-when-cross-origin, strict-origin-when-cross-origin
+server	github.com
+strict-transport-security	max-age=31536000; includeSubdomains; preload
+vary	Accept,Accept-Encoding, Accept, X-Requested-With
+x-content-type-options	nosniff
+x-frame-options	deny
+x-github-api-version-selected	2022-11-28
+x-github-media-type	unknown, github.v3
+x-github-request-id	C822:771DC:1EBFCE9:1BD4A34:68F3EAC6
+x-ratelimit-limit	60
+x-ratelimit-remaining	59
+x-ratelimit-reset	1760819414
+x-ratelimit-resource	core
+x-ratelimit-used	1
+x-xss-protection	0
